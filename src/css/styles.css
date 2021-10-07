@@ -408,13 +408,12 @@ table th {
   text-align: left;
 }
 
-.page-header {
+.ui-page-header {
   text-align: center;
   padding: 3rem 0;
+  background-color: #fafafa;
 }
-
-.title {
-  font-size: 1.25rem;
+.ui-page-header h1 {
+  font-size: 3rem;
 }
-
 /*# sourceMappingURL=styles.css.map */

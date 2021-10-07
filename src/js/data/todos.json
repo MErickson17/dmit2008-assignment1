@@ -1,0 +1,52 @@
+[
+    {
+        "id": "as35ds7h",
+        "category": "school",
+        "title":"School Category",
+        "isComplete":false,
+        "startDate":"Tuesday September 7th",
+        "startTime":"10:00am",
+        "endDate":"Friday December 17th",
+        "endTime":"3:00pm"
+    },
+    {
+        "id": "as35ds7h",
+        "category": "recreation",
+        "title":"Recreation Category",
+        "isComplete":true,
+        "startDate":"Saturday September 4th",
+        "startTime":"10:00am",
+        "endDate":"Wednesday September 15th",
+        "endTime":"10:00am"
+    },
+    {
+        "id": "ha34njk7",
+        "category": "health",
+        "title":"Health Category",
+        "isComplete":false,
+        "startDate":"Thursday October 14th",
+        "startTime":"10:00am",
+        "endDate":"Thursday October 14th",
+        "endTime":"5:00pm"
+    },
+    {
+        "id": "as35ds7h",
+        "category": "work",
+        "title":"Work Category",
+        "isComplete":true,
+        "startDate":"Monday September 13th",
+        "startTime":"8:00am",
+        "endDate":"Friday September 17th",
+        "endTime":"5:00pmam"
+    },
+    {
+        "id": "as35ds7h",
+        "category": "art",
+        "title":"Art Category",
+        "isComplete":true,
+        "startDate":"Saturday October 9th",
+        "startTime":"10:00am",
+        "endDate":"Saturday October 16th",
+        "endTime":"11:00am"
+    }
+]
