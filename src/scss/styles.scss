@@ -1,2 +1,6 @@
 @use 'reboot';
-@use 'page-header'
+@use 'page-header';
+
+body {
+    background-color: rgb(211, 190, 190);
+}
