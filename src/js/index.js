@@ -2,4 +2,4 @@
 console.log("temp")
 
 const app = document.querySelector('#app')
-//Router(window.location.pathname)
+Router(window.location.pathname)

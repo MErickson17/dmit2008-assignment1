@@ -1,3 +1,4 @@
+//Takes a template string and teturns a document fragment
 const makeElement = function(templateString=``) {
     const docFragment = document.createRange().createContextualFragment(templateString)
     const element = docFragment.children[0]

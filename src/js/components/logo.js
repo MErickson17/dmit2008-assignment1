@@ -16,4 +16,4 @@ const logo = `
 </svg>
 `
 
-export {logo}
+export default logo
