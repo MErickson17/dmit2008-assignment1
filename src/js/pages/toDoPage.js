@@ -1,5 +1,5 @@
 import link from './../components/link';
-import header from './../components/header';
+import heading from './../components/heading';
 
 //the todo list page
 
