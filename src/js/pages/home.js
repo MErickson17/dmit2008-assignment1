@@ -8,8 +8,8 @@ import makeElement from './../utils/makeElement';
 const home = function() {
     const header = document.createElement('header')
     header.classList.add('ui-page-header')
-    const icon = makeElement(logo);
-    const h1 = heading('h1', 'Night C Arts')
+    const icon = makeElement(logo());
+    const h1 = heading('Night C Arts')
     const linkElm = link('to do app', '/toDoPage')
     header.append(icon)
     header.append(h1)

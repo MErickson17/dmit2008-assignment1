@@ -1,4 +1,6 @@
-const logo = `
+const logo = function()
+{
+return `
 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="pencil-paintbrush" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 <path fill="#14213d" 
     d="M433.43 365.35c-20.56-54.19-55.01-73.83-93.93-79.66l158.43-158.45c18.76-18.76 18.75-49.17 
@@ -15,5 +17,6 @@ const logo = `
 </path>
 </svg>
 `
+}
 
 export default logo

@@ -1,5 +1,5 @@
 import makeElement from "./../utils/makeElement";
-import Router from "./../routes/router";
+import Router from "../routes/router";
 
 //prevent default anchor tag behaviour
 const onRequestPage = function(e){
@@ -8,8 +8,8 @@ const onRequestPage = function(e){
     return false;
 }
 
-const link = function(title="uiLink", path="/", className="ui=link") {
-    const template = `<a class="${className}" href="${path}">${title}</a>`
+const link = function(title="uiLink", path="/", className="ui-link") {
+    const template = `<a class="${className}" href="${path}" data-path="${path}">${title}</a>`
     const element = makeElement(template)
     element.addEventListener('click', onRequestPage)
 
