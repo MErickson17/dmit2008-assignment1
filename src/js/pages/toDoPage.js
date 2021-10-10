@@ -1,13 +1,14 @@
-import link from './../components/link';
-import heading from './../components/heading';
-import logo from './../components/logo';
-import makeElement from './../utils/makeElement';
+import branding from "./../components/branding"
 
 //the todo list page
 
 const toDoPage = function() {
-    console.log("hello!")
-    return null
+    const toDoContent = document.createElement('div')
+    
+    const brand = branding()
+
+    toDoContent.append(brand)
+    return toDoContent
 }
 
 export default toDoPage

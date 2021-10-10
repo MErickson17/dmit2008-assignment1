@@ -416,8 +416,11 @@ table th {
 .ui-page-header h1 {
   font-size: 3rem;
 }
+.ui-page-header p {
+  font-size: 1.25rem;
+}
 
 body {
-  background-color: #4d50fd;
+  background-color: #14213d;
 }
 /*# sourceMappingURL=styles.css.map */
