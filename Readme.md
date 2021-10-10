@@ -4,6 +4,10 @@ My "company" name is based off of the screen name I use when I draw & post art.
 
 ## Notes
 * From the assignment outline, I renamed `header.js` to `heading.js` as I felt it made more sense as that component is used to make the h1 heading for the header.
+* Created `branding.js` to hold a header component used on all pages. Uses:
+  * `logo.js`
+  * `heading.js`
+  * `tagline.js`
 
 ## How to start and run the project
 > TODO: Add the netlify link and instructions
