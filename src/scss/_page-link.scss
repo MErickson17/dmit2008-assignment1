@@ -1,6 +1,6 @@
 .link-container {
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .ui-link {
@@ -16,6 +16,6 @@
 .ui-link:hover {   
     color: #0a0a0a;
     text-decoration: none;
-    box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, .3);
+    box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, 0.5);
 }
 

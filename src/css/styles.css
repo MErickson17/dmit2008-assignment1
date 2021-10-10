@@ -410,7 +410,8 @@ table th {
 
 .ui-page-header {
   text-align: center;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
+  line-height: 1.2;
   background-color: #fafafa;
 }
 .ui-page-header h1 {
@@ -419,8 +420,39 @@ table th {
 .ui-page-header p {
   font-size: 1.25rem;
 }
+.ui-page-header svg {
+  width: 4rem;
+  height: auto;
+}
+
+.link-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.ui-link {
+  display: inline-block;
+  color: #0a0a0a;
+  font-weight: 700;
+  background-color: #e5e5e5;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.ui-link:hover {
+  color: #0a0a0a;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, 0.3);
+          box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, 0.3);
+}
 
 body {
   background-color: #14213d;
+}
+
+#app {
+  max-width: 960px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */

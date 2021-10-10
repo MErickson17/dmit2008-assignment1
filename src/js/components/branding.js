@@ -1,6 +1,6 @@
 import heading from "./heading";
 import tagline from "./tagline";
-import logo from "./logo";
+import logo from "./icons/logo";
 import makeElement from "../utils/makeElement";
 
 const branding = function() {

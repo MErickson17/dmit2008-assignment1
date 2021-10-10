@@ -1,5 +1,5 @@
 import link from './../components/link';
-import branding from './../components/branding';
+import branding from './../components/branding'; //makes use of heading.js, icon.js, and tagline.js
 
 // home page
 
