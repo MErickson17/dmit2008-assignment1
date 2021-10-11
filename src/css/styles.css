@@ -409,13 +409,15 @@ table th {
 }
 
 .ui-page-header {
+  color: #14213d;
   text-align: center;
-  padding: 1.5rem 0;
   line-height: 1.2;
+  padding: 1.5rem 0;
   background-color: #fafafa;
 }
 .ui-page-header h1 {
   font-size: 3rem;
+  font-weight: 700;
 }
 .ui-page-header p {
   font-size: 1.25rem;
@@ -443,8 +445,18 @@ table th {
 .ui-link:hover {
   color: #0a0a0a;
   text-decoration: none;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, 0.3);
-          box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, 0.3);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, 0.5);
+          box-shadow: 0px 0px 10px 10px rgba(252, 163, 17, 0.5);
+}
+
+.ui-error-msg {
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 1rem 2rem;
+}
+.ui-error-msg span {
+  font-weight: 700;
 }
 
 body {

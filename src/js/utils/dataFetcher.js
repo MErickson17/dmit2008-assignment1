@@ -2,9 +2,9 @@
 const dataFetcher = async function(url=null) {
     
     const response = await fetch(url);
-    const toDoJSON = await response.json()
+    const data = await response.json();
     
-    return toDoJSON
+    return data
 }
 
-export {dataFetcher}
+export default dataFetcher
