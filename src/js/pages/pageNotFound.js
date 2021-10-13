@@ -11,7 +11,7 @@ const pageNotFound = function() {
     linkContainer.classList.add('link-container')    
     
     const brand = branding()
-    const image = makeElement(meteor())
+    const image = makeElement(meteor()) //add a class?
     const message = errorMsg('404', 'Seems like you\'re looking for something that isn\'t here...')
     
     const linkElm = link('go back!!', '/')

@@ -4,7 +4,8 @@ import editIcon from "./icons/editIcon";
 
 const editButton = function(className="ui-button") {
     const icon = makeElement(editIcon())
-    const element = `<button class="${className}">${icon}</button>`
+    const template = `<button class="${className}">${icon}</button>`
+    const element = makeElement(template)
     return element
 }
 
