@@ -19,12 +19,16 @@ const toDoPage = function() {
         let store = [...data]
         store.forEach(item => {
             listItem = render(todoItem, item)
-            listItem.append(editButton())
+            //listItem.append(editButton())
             listContainer.append(listItem)
         });
     })
 
+    toDoContent.append(brand)
+    toDoContent.append(listContainer)
 
+
+    return toDoContent
     
     
     
@@ -38,11 +42,7 @@ const toDoPage = function() {
     // - append to UL
 
 
-    toDoContent.append(brand)
-    toDoContent.append(listContainer)
 
-
-    return toDoContent
 }
 
 export default toDoPage
