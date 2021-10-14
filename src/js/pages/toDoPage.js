@@ -17,7 +17,7 @@ const toDoPage = function() {
     .then(data => {
         let store = [...data]
         store.forEach(item => {
-            listItem = render(todoItem, item)
+            let listItem = render(todoItem, item)
             listItem.append(editButton())
             listContainer.append(listItem)
         });
