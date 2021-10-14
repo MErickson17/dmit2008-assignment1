@@ -1,19 +1,33 @@
-import branding from "./../components/branding"
-import makeElement from "./../utils/makeElement";
+import branding from "./../components/branding";
 import dataFetcher from "./../utils/dataFetcher";
+import render from "./../utils/render";
+import todoList from "./../components/todoList";
+import todoItem from "./../components/templates/todoItem";
+import editButton from "./../components/deleteButton";
 
 
 //the todo list page
-const toDoPage = async function() {
-//doing this for now instead of dataFetcher b/c there seems
-//to be an issue with parcel(?) and using it with local data
-    //const todoData = require('./../data/todos.json')
+const toDoPage = function() {
 
-    const todoData = await dataFetcher('./data/todos.json');
-    console.log(todoData);
-    
     const toDoContent = document.createElement('div') //container for the page
     const brand = branding()
+    const listContainer = todoList('ui-list');
+    
+    dataFetcher('https://raw.githubusercontent.com/MErickson17/dmit2008-assignment1/main/data/todos.json')
+    .then(data => {
+        let store = [...data]
+        store.forEach(item => {
+            listItem = render(todoItem, item)
+            listItem.append(editButton())
+            listContainer.append(listItem)
+        });
+    })
+
+
+    
+    
+    
+
 
     //TODO make a ul component --done
     //      make addToDo --done / appBar components
@@ -24,6 +38,7 @@ const toDoPage = async function() {
 
 
     toDoContent.append(brand)
+    toDoContent.append(listContainer)
 
 
     return toDoContent
