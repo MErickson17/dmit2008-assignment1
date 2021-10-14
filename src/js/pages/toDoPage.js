@@ -12,12 +12,13 @@ const toDoPage = function() {
     const toDoContent = document.createElement('div') //container for the page
     const brand = branding()
     const listContainer = todoList('ui-list');
+    let listItem;
     
     dataFetcher('https://raw.githubusercontent.com/MErickson17/dmit2008-assignment1/main/data/todos.json')
     .then(data => {
         let store = [...data]
         store.forEach(item => {
-            let listItem = render(todoItem, item)
+            listItem = render(todoItem, item)
             listItem.append(editButton())
             listContainer.append(listItem)
         });
