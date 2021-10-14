@@ -11,7 +11,8 @@ const toDoPage = function() {
     const toDoContent = document.createElement('div') //container for the page
     const brand = branding()
 
-    //TODO make a ul component and make it into an element
+    //TODO make a ul component --done
+    //      make addToDo / appBar components
     //make a forEach loop on the todoData to:
     // - use the render function to join the template and data
     // - make it into an element
