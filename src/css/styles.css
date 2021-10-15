@@ -459,6 +459,37 @@ table th {
   font-weight: 700;
 }
 
+.error-image {
+  text-align: center;
+  margin-top: 4rem;
+}
+.error-image svg {
+  width: 10rem;
+  height: auto;
+}
+
+.app-bar {
+  position: fixed;
+  bottom: 0;
+  height: 2rem;
+  width: 100%;
+  max-width: 960px;
+  background-color: #fafafa;
+}
+
+.add-btn {
+  position: absolute;
+  right: 10px;
+  top: -25px;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 2px solid #fafafa;
+  border-radius: 8px;
+  background: no-repeat center url("./../assets/svg/add.svg"), #fca311;
+  overflow: hidden;
+}
+
 body {
   background-color: #14213d;
 }

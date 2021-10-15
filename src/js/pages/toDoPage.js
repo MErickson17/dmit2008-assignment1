@@ -3,7 +3,9 @@ import dataFetcher from "./../utils/dataFetcher";
 import render from "./../utils/render";
 import todoList from "./../components/todoList";
 import todoItem from "./../components/templates/todoItem";
-import editButton from "./../components/deleteButton";
+import deleteButton from "./../components/deleteButton";
+import editButton from "./../components/editButton";
+import appBar from "./../components/appBar";
 
 
 //the todo list page
@@ -14,34 +16,26 @@ const toDoPage = function() {
     const listContainer = todoList('ui-list');
     let listItem;
     
+    //fetch the data and place it into a store
+    //do a foreach loop to render the list item for each todo entry
+    //append each list item to the list container (ul)
     dataFetcher('https://raw.githubusercontent.com/MErickson17/dmit2008-assignment1/main/data/todos.json')
     .then(data => {
         let store = [...data]
         store.forEach(item => {
             listItem = render(todoItem, item)
-            //listItem.append(editButton())
+            listItem.append(editButton())
+            listItem.append(deleteButton())
             listContainer.append(listItem)
         });
     })
 
     toDoContent.append(brand)
     toDoContent.append(listContainer)
+    toDoContent.append(appBar())
 
 
     return toDoContent
-    
-    
-    
-
-
-    //TODO make a ul component --done
-    //      make addToDo --done / appBar components
-    //make a forEach loop on the todoData to:
-    // - use the render function to join the template and data
-    // - make it into an element
-    // - append to UL
-
-
 
 }
 

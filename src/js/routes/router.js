@@ -9,10 +9,12 @@ const Router = function(pathname) {
         "/pageNotFound":pageNotFound()
     }
 
-    //loading and inloading pages into the div app
+    //loading and unloading pages into the div app
     const app = document.querySelector('#app')
     app.innerHTML = '' //clears out what is currently in app
 
+    //if I decide to check if the pathname exists in routes
+    //I should do it here; if it does include what's currently below...
     window.history.pushState(
         {},
         pathname,

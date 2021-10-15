@@ -1,0 +1,26 @@
+.app-bar {
+    position: fixed;
+    bottom: 0;
+    height: 2rem;
+    width: 100%;
+    max-width: 960px;
+    background-color: rgb(250, 250, 250);
+}
+
+.add-btn {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid rgb(250, 250, 250);
+    border-radius: 8px;
+    background: no-repeat center url("./../assets/svg/add.svg"), rgb(252, 163, 17);
+}
+
+.add-btn:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+
+//note: the UL will need a margin bottom to make room for the appbar beneath it

@@ -1,9 +1,7 @@
 import makeElement from "./../utils/makeElement";
-import deleteIcon from "./icons/trashIcon";
 
-const deleteButton = function(className="ui-button") {
-    const icon = makeElement(deleteIcon);
-    const template = `<button class="${className}">${icon}</button>`;
+const deleteButton = function(className="ui-button",title="delete") {
+    const template = `<button class="${className}">${title}</button>`
     const element = makeElement(template)
     return element
 }
