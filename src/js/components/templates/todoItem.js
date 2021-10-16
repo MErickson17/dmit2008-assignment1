@@ -17,8 +17,7 @@ import editButton from "./../editButton";
 
 //pass the todo object into this method and extract only the properties we want.
 const todoTemplate = function({id, category, title, isComplete, startDate, startTime, endDate, endTime}) {
-    const completeStatus = isComplete ? "<p>Completed</p>" : "";
-
+    const completeStatus = isComplete ? "<p class='completed'>Completed</p>" : "<p>&zwnj;</p>";
     const template = 
     `
     <li data-key="${id}" class="${category}">

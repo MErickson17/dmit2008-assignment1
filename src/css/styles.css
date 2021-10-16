@@ -483,11 +483,59 @@ table th {
   top: -25px;
   width: 3rem;
   height: 3rem;
-  padding: 0;
-  border: 2px solid #fafafa;
+  border: 3px solid #fafafa;
   border-radius: 8px;
   background: no-repeat center url("./../assets/svg/add.svg"), #fca311;
-  overflow: hidden;
+}
+
+.add-btn:hover {
+  background-color: #fafafa;
+}
+
+.ui-list {
+  margin: 2rem 1rem 4rem;
+  padding: 1rem 2rem;
+  background-color: rgba(229, 229, 229, 0.1);
+  border-radius: 8px;
+}
+.ui-list li {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+.ui-list li p {
+  font-size: 0.85rem;
+}
+
+.completed {
+  color: green;
+  font-weight: 700;
+}
+
+.school {
+  border-top: 3px solid red;
+  border-left: 3px solid red;
+}
+
+.recreation {
+  border-top: 3px solid #0decec;
+  border-left: 3px solid #0decec;
+}
+
+.health {
+  border-top: 3px solid yellow;
+  border-left: 3px solid yellow;
+}
+
+.work {
+  border-top: 3px solid #5fff2f;
+  border-left: 3px solid #5fff2f;
+}
+
+.art {
+  border-top: 3px solid #ff8297;
+  border-left: 3px solid #ff8297;
 }
 
 body {
