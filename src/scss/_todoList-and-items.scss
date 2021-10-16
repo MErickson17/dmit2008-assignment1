@@ -3,17 +3,34 @@
     padding: 1rem 2rem;
     background-color: rgba($color: #e5e5e5, $alpha: 0.1);
     border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px rgba(252, 163, 17, 0.5);
+    color: rgb(22, 33, 61);
 
     li {
         margin: 1rem 0;
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
         background-color: rgb(250,250,250);
         border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
     }
 
     li p {
         font-size: .85rem;
     }
+    
+    input {
+        border: none;
+        background: rgb(250,250,250);
+        font-weight: 700;
+        color: rgb(22, 33, 61);
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .completed {
@@ -24,24 +41,44 @@
 .school {
     border-top: 3px solid red;
     border-left: 3px solid red;
+
+    input {
+        border-bottom: 1px solid red;
+    }
 }
 
 .recreation {
     border-top: 3px solid rgb(13, 236, 236);
     border-left: 3px solid rgb(13, 236, 236);
+
+    input {
+    border-bottom: 1px solid rgb(13, 236, 236);
+    }
 }
 
 .health {
     border-top: 3px solid yellow;
     border-left: 3px solid yellow;
+
+    input {
+        border-bottom: 1px solid yellow;
+    }
 }
 
 .work {
     border-top: 3px solid rgb(95, 255, 47);
     border-left: 3px solid rgb(95, 255, 47);
+
+    input {
+        border-bottom: 1px solid rgb(95, 255, 47);
+    }
 }
 
 .art {
     border-top: 3px solid rgb(255, 130, 151);
     border-left: 3px solid rgb(255, 130, 151);
+
+    input {
+        border-bottom: 1px solid rgb(255, 130, 151);
+    }
 }

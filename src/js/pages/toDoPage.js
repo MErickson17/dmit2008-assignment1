@@ -24,8 +24,11 @@ const toDoPage = function() {
         let store = [...data]
         store.forEach(item => {
             listItem = render(todoItem, item)
-            listItem.append(editButton())
-            listItem.append(deleteButton())
+            const buttonContainer = document.createElement('div')
+            buttonContainer.classList.add("button-container")
+            buttonContainer.append(editButton("editBtn"))
+            buttonContainer.append(deleteButton("deleteBtn"))
+            listItem.append(buttonContainer)
             listContainer.append(listItem)
         });
     })

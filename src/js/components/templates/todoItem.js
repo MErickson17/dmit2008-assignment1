@@ -21,10 +21,12 @@ const todoTemplate = function({id, category, title, isComplete, startDate, start
     const template = 
     `
     <li data-key="${id}" class="${category}">
-        <input type="text" value="${title}">
-        <p>Start Date: ${startDate} @ ${startTime}</p>
-        <p>End Date: ${endDate} @ ${endTime}</p>
-        ${completeStatus}
+        <div>
+            <input type="text" value="${title}">
+            <p>Start Date: ${startDate} @ ${startTime}</p>
+            <p>End Date: ${endDate} @ ${endTime}</p>
+            ${completeStatus}
+        </div>
     </li>
     `
 

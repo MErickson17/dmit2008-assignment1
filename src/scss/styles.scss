@@ -3,7 +3,9 @@
 @use 'page-link';
 @use 'error-message';
 @use 'appBar-and-addBtn';
-@use 'todoList';
+@use 'todoList-and-items';
+@use 'editButton';
+@use 'deleteButton';
 
 body {
     background-color: rgb(20, 33, 61);

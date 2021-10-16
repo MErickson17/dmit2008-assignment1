@@ -497,15 +497,43 @@ table th {
   padding: 1rem 2rem;
   background-color: rgba(229, 229, 229, 0.1);
   border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(252, 163, 17, 0.5);
+          box-shadow: 0px 0px 10px 5px rgba(252, 163, 17, 0.5);
+  color: #16213d;
 }
 .ui-list li {
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   background-color: #fafafa;
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .ui-list li p {
   font-size: 0.85rem;
+}
+.ui-list input {
+  border: none;
+  background: #fafafa;
+  font-weight: 700;
+  color: #16213d;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .completed {
@@ -517,25 +545,62 @@ table th {
   border-top: 3px solid red;
   border-left: 3px solid red;
 }
+.school input {
+  border-bottom: 1px solid red;
+}
 
 .recreation {
   border-top: 3px solid #0decec;
   border-left: 3px solid #0decec;
+}
+.recreation input {
+  border-bottom: 1px solid #0decec;
 }
 
 .health {
   border-top: 3px solid yellow;
   border-left: 3px solid yellow;
 }
+.health input {
+  border-bottom: 1px solid yellow;
+}
 
 .work {
   border-top: 3px solid #5fff2f;
   border-left: 3px solid #5fff2f;
 }
+.work input {
+  border-bottom: 1px solid #5fff2f;
+}
 
 .art {
   border-top: 3px solid #ff8297;
   border-left: 3px solid #ff8297;
+}
+.art input {
+  border-bottom: 1px solid #ff8297;
+}
+
+.editBtn {
+  font-size: 0.6rem;
+  line-height: 1;
+  padding-top: 1.1rem;
+  color: #14213d;
+  border: none;
+  width: 2rem;
+  height: 3rem;
+  background: no-repeat top url("./../assets/svg/edit.svg"), #fafafa;
+}
+
+.deleteBtn {
+  font-size: 0.6rem;
+  line-height: 1;
+  padding-top: 1.25rem;
+  color: #14213d;
+  border: none;
+  width: 2rem;
+  height: 3rem;
+  background: no-repeat top url("./../assets/svg/trash.svg"), #fafafa;
 }
 
 body {
