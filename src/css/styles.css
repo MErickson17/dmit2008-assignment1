@@ -411,19 +411,20 @@ table th {
 .ui-page-header {
   color: #14213d;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.1;
   padding: 1.5rem 0;
   background-color: #fafafa;
 }
 .ui-page-header h1 {
-  font-size: 3rem;
+  font-family: "Brush Script MT", cursive;
+  font-size: 2.75rem;
   font-weight: 700;
 }
 .ui-page-header p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .ui-page-header svg {
-  width: 4rem;
+  width: 3rem;
   height: auto;
 }
 
@@ -490,6 +491,7 @@ table th {
 
 .add-btn:hover {
   background-color: #fafafa;
+  cursor: pointer;
 }
 
 .ui-list {
@@ -584,23 +586,31 @@ table th {
 .editBtn {
   font-size: 0.6rem;
   line-height: 1;
-  padding-top: 1.1rem;
+  padding-top: 1.7rem;
   color: #14213d;
   border: none;
   width: 2rem;
-  height: 3rem;
+  height: 2.5rem;
   background: no-repeat top url("./../assets/svg/edit.svg"), #fafafa;
+}
+
+.editBtn:hover {
+  cursor: pointer;
 }
 
 .deleteBtn {
   font-size: 0.6rem;
   line-height: 1;
-  padding-top: 1.25rem;
+  padding-top: 1.7rem;
   color: #14213d;
   border: none;
   width: 2rem;
-  height: 3rem;
+  height: 2.5rem;
   background: no-repeat top url("./../assets/svg/trash.svg"), #fafafa;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
 }
 
 body {

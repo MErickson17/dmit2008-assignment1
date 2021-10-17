@@ -1,18 +1,19 @@
 .ui-page-header {
     color: rgb(20, 33, 61);
     text-align: center;    
-    line-height: 1.2;
+    line-height: 1;
     padding: 1.5rem 0;
     background-color: rgb(250, 250, 250);
     h1 {
-        font-size: 3rem;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 2.75rem;
         font-weight: 700;
     }
     p {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
     svg {
-        width: 4rem;
+        width: 3rem;
         height: auto;
     }
 }

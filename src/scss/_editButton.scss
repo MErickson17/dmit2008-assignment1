@@ -8,3 +8,7 @@
     height: 2.5rem;
     background: no-repeat top url("./../assets/svg/edit.svg"), rgb(250,250,250);
 }
+
+.editBtn:hover {
+    cursor: pointer;
+}
