@@ -1,9 +1,11 @@
 import makeElement from "./../utils/makeElement";
+import editIcon from "./icons/editIcon";
 
 const editButton = function(className="ui-button", title="edit") {
-    const template = `<button class="${className}">${title}</button>`
+    const icon = editIcon();
+    const template = `<button class="${className}">${icon}${title}</button>`
     const element = makeElement(template)
     return element
 }
-
+S
 export default editButton
