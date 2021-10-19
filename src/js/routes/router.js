@@ -2,12 +2,14 @@ import home from "./../pages/home";
 import pageNotFound from "./../pages/pageNotFound";
 import toDoPage from "./../pages/toDoPage";
 
+const routes = {
+    "/":home(),
+    "/toDoPage":toDoPage(),
+    "/pageNotFound":pageNotFound()
+}
+
 const Router = function(pathname) {
-    const routes = {
-        "/":home(),
-        "/toDoPage":toDoPage(),
-        "/pageNotFound":pageNotFound()
-    }
+    
 
     //loading and unloading pages into the div app
     const app = document.querySelector('#app')
