@@ -1,5 +1,5 @@
 import makeElement from "./../utils/makeElement";
-import addButton from "./addToDo";
+import addButton from "./ui/addToDo";
 
 const appBar = function(className="app-bar") {
     const appBarTemplate = `<div class="${className}"></div>`

@@ -1,8 +1,8 @@
 import branding from "./../components/branding";
-import link from './../components/link';
+import link from './../components/ui/link';
 import meteor from './../components/icons/meteor';
 import makeElement from "./../utils/makeElement";
-import errorMsg from "../components/errorMsg";
+import errorMsg from "./../components/ui/errorMsg";
 
 //Page not found page
 const pageNotFound = function() {

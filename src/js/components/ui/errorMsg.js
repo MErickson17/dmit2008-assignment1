@@ -1,4 +1,4 @@
-import makeElement from "./../utils/makeElement";
+import makeElement from "./../../utils/makeElement";
 
 const errorMsg = function(errorCode="404", errorMsg="An error has occurred", className="ui-error-msg") {
     const template = `    

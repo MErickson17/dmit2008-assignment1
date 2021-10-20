@@ -1,5 +1,3 @@
-import deleteButton from "./../deleteButton";
-import editButton from "./../editButton";
 
 //Data Model:
 /*

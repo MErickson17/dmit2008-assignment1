@@ -1,10 +1,10 @@
 import branding from "./../components/branding";
 import dataFetcher from "./../utils/dataFetcher";
 import render from "./../utils/render";
-import todoList from "./../components/todoList";
+import todoList from "../components/ui/todoList";
 import todoItem from "./../components/templates/todoItem";
-import deleteButton from "./../components/deleteButton";
-import editButton from "./../components/editButton";
+import deleteButton from "./../components/ui/deleteButton";
+import editButton from "./../components/ui/editButton";
 import appBar from "./../components/appBar";
 
 

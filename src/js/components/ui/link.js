@@ -1,5 +1,5 @@
-import makeElement from "./../utils/makeElement";
-import Router from "../routes/router";
+import makeElement from "./../../utils/makeElement";
+import Router from "./../../routes/router";
 
 //prevent default anchor tag behaviour
 const onRequestPage = function(e){

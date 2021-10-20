@@ -1,4 +1,4 @@
-import makeElement from "../utils/makeElement";
+import makeElement from "./../../utils/makeElement";
 
 const heading = function(title="uiHeading", className="ui-heading") {
     const template = `<h1 class="${className}">${title}</h1>`
