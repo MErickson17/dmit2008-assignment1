@@ -34,7 +34,7 @@ const todoTemplate = function({id, category, title, isComplete, startDate, start
     </li>
     `
 
-    element = makeElement(template)
+    const element = makeElement(template)
 
     return element
 }
