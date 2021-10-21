@@ -1,4 +1,6 @@
-
+import deleteButton from "../ui/deleteButton";
+import editButton from "../ui/editButton";
+import makeElement from "../../utils/makeElement";
 //Data Model:
 /*
     todoItem = {
@@ -25,10 +27,16 @@ const todoTemplate = function({id, category, title, isComplete, startDate, start
             <p>End Date: ${endDate} @ ${endTime}</p>
             ${completeStatus}
         </div>
+        <div class="button-container">
+            ${editButton("editBtn")}
+            ${deleteButton("deleteBtn")}
+        </div>
     </li>
     `
 
-    return template
+    element = makeElement(template)
+
+    return element
 }
 
 export default todoTemplate
