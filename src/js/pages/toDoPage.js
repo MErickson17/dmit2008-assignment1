@@ -1,8 +1,8 @@
 import branding from "./../components/branding";
-import todoList from "../components/ui/todoList";
+import todoList from "./../components/ui/todoList";
 import todoItem from "./../components/templates/todoItem";
 import appBar from "./../components/appBar";
-import { getStore } from "../redux/store";
+import { getStore } from "./../redux/store";
 import todoItem from "./../components/templates/todoItem";
 
 
