@@ -18,15 +18,17 @@ const toDoPage = function() {
     //fetch the data and place it into a store
     //do a foreach loop to render the list item for each todo entry
     //append each list item to the list container (ul)
-    if (todoData !== null) {
-        const elements = todoData.map(item => todoItem(item))
-        elements.forEach(element => listContainer.append(element))
+    function render() {
+        if (todoData !== null) {
+            const elements = todoData.map(item => todoItem(item))
+            elements.forEach(element => listContainer.append(element))
+        }
+        toDoContent.append(brand)
+        toDoContent.append(listContainer)
+        toDoContent.append(appBar())
     }
 
-    toDoContent.append(brand)
-    toDoContent.append(listContainer)
-    toDoContent.append(appBar())
-
+    render()
     return toDoContent
 
 }
