@@ -15,8 +15,6 @@ const Router = function(pathname) {
     const app = document.querySelector('#app')
     app.innerHTML = '' //clears out what is currently in app
 
-    //if I decide to check if the pathname exists in routes
-    //I should do it here; if it does include what's currently below...
     window.history.pushState(
         {},
         pathname,
