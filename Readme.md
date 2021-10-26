@@ -8,6 +8,7 @@ My "company" name is based off of the screen name I use when I draw & post art.
   * `logo.js`
   * `heading.js`
   * `tagline.js`
+* Created the `netlify.toml` in order for netlify to use the Router built into my app, and use my `/pageNotFound`
 
 ## How to start and run the project
 * To start the app with a locally downloaded copy, first run `npm install` in the terminal to install all project modules. Then run `npm start` to start http-server and run the project on a local server. 
