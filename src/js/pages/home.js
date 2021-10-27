@@ -21,7 +21,7 @@ const home = function() {
     linkContainer.classList.add('link-container')
 
     const brand = branding()    
-    const linkElm = link('to do app', '/toDoPage')
+    const linkElm = link('to do app', '/todo')
 
     linkContainer.append(linkElm)
     homeContent.append(brand)
