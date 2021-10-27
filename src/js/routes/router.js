@@ -1,6 +1,6 @@
 import home from "./../pages/home";
 import pageNotFound from "./../pages/pageNotFound";
-import toDoPage from "./../pages/toDoPage";
+import toDoPage from "../pages/toDoPage";
 
 const routes = {
     "/":home,
