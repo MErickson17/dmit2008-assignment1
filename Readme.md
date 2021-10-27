@@ -1,6 +1,6 @@
 # Night C Arts - Todo List App
 ## Night C Arts
-My "company" name is based off of the screen name I use when I draw & post art.
+My brand name is based off of the screen name I use when I draw and post art.
 
 ## Notes
 * From the assignment outline, I renamed `header.js` to `heading.js` as I felt it made more sense as that component is used to make the h1 heading for the header.
