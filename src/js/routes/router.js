@@ -4,7 +4,7 @@ import toDoPage from "./../pages/toDoPage";
 
 const routes = {
     "/":home,
-    "/toDoPage":toDoPage
+    "/todo":toDoPage
 }
 
 const Router = function(pathname) {
