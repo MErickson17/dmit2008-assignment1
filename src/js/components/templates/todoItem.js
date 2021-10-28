@@ -22,12 +22,12 @@ const todoTemplate = function({id, category, title, isComplete, startDate, start
     `
     <li data-key="${id}" class="${category}">
         <div>
-            <input type="text" value="${title}">
+            <h2>${title}</h2>
             <p>Start Date: ${startDate} @ ${startTime}</p>
             <p>End Date: ${endDate} @ ${endTime}</p>
             ${completeStatus}
         </div>
-        <div class="button-container">
+        <div class="button-container" data-key="${id}">
             ${editButton("editBtn")}
             ${deleteButton("deleteBtn")}
         </div>

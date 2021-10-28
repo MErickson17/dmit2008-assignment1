@@ -1,5 +1,6 @@
 {
   "name": "nightcarts-todolistapp",
+  "git": "https://github.com/MErickson17/nightcarts-todoapp",
   "version": "1.0.0",
   "description": "simple vanilla js project",
   "default": "src/index.html",
