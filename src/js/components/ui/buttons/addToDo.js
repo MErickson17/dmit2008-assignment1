@@ -1,5 +1,5 @@
-import makeElement from "../../../utils/makeElement";
-import addIcon from "../../icons/addIcon";
+import makeElement from "./../../../utils/makeElement";
+import addIcon from "./../../icons/addIcon";
 
 const addButton = function(className="ui-button") {
     const icon = addIcon();

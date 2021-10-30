@@ -1,4 +1,4 @@
-import editIcon from "../../icons/editIcon";
+import editIcon from "./../../icons/editIcon";
 
 const editButton = function(className="ui-button", title="edit") {
     const icon = editIcon();

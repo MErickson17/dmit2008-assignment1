@@ -1,4 +1,4 @@
-import makeElement from "../../utils/makeElement";
+import makeElement from "./../../utils/makeElement";
 import addButton from "./buttons/addToDo";
 
 const appBar = function(className="app-bar") {

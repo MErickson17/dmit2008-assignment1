@@ -1,9 +1,9 @@
-import branding from "../components/ui/branding";
-import todoList from "../components/ui/todoList";
-import todoItem from "../components/templates/todoItem";
-import appBar from "../components/ui/appBar";
-import { getStore } from "../redux/store";
-import todoItem from "../components/templates/todoItem";
+import branding from "./../components/ui/branding";
+import todoList from "./../components/ui/todoList";
+import todoItem from "./../components/templates/todoItem";
+import appBar from "./../components/ui/appBar";
+import { getStore } from "./../redux/store";
+import todoItem from "./../components/templates/todoItem";
 
 
 //the todo list page

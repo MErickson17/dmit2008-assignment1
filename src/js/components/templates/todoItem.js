@@ -1,6 +1,6 @@
-import deleteButton from "../ui/buttons/deleteButton";
-import editButton from "../ui/buttons/editButton";
-import makeElement from "../../utils/makeElement";
+import deleteButton from "./../ui/buttons/deleteButton";
+import editButton from "./../ui/buttons/editButton";
+import makeElement from "./../../utils/makeElement";
 //Data Model:
 /*
     todoItem = {

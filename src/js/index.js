@@ -8,7 +8,7 @@ const onAppInit = async function(e){
     const app = document.querySelector('#app')
     let toDos = await dataFetcher('./data/todos.json')
 
-    //If todo items didn't have a unique id (not necessary for Assignment 1, but good to know)
+    //If todo items didn't have a unique id (not necessary for current version of the project, but good to know and may be adjusted for next version)
     if(toDos[0].id === undefined) {
         toDos = [...keyGenerator(toDos)]
     }

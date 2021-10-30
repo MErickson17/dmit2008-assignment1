@@ -1,4 +1,4 @@
-import trashIcon from "../../icons/trashIcon";
+import trashIcon from "./../../icons/trashIcon";
 
 const deleteButton = function(className="ui-button",title="delete") {
     const icon = trashIcon()

@@ -1,7 +1,7 @@
 import heading from "./heading";
 import tagline from "./tagline";
-import logo from "../icons/logo";
-import makeElement from "../../utils/makeElement";
+import logo from "./../icons/logo";
+import makeElement from "./../../utils/makeElement";
 
 const branding = function() {
     const header = document.createElement('header')
