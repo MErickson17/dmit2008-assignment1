@@ -1,5 +1,5 @@
-import deleteButton from "../ui/deleteButton";
-import editButton from "../ui/editButton";
+import deleteButton from "../ui/buttons/deleteButton";
+import editButton from "../ui/buttons/editButton";
 import makeElement from "../../utils/makeElement";
 //Data Model:
 /*

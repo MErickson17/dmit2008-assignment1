@@ -1,4 +1,4 @@
-import branding from "./../components/branding";
+import branding from "./../components/ui/branding";
 import link from './../components/ui/link';
 import meteor from './../components/icons/meteor';
 import makeElement from "./../utils/makeElement";
