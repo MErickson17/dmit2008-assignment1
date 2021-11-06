@@ -1,15 +1,12 @@
 .ui-list {
     margin: 2rem 1rem 4rem;
-    padding: 1rem 2rem;
-    background-color: rgba($color: #e5e5e5, $alpha: 0.1);
     border-radius: 8px;
-    box-shadow: 0px 0px 10px 5px rgba(252, 163, 17, 0.5);
     color: rgb(22, 33, 61);
 
     li {
         margin: 1rem 0;
         padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-        background-color: rgb(250,250,250);
+        background-color: #fff;
         border-radius: 8px;
         display: flex;
         justify-content: space-between;
@@ -20,7 +17,7 @@
     }
     
     h2 {
-        font-size: 1rem;
+        font-size: 1.05rem;
         font-weight: 700;
     }
 }
@@ -37,46 +34,26 @@
 }
 
 .school {
-    border-top: 3px solid red;
-    border-left: 3px solid red;
-
-    h2 {
-        border-bottom: 1px solid red;
-    }
+    border-left: 4px solid red;
+    border-top: 2px solid red;
 }
 
 .recreation {
-    border-top: 3px solid rgb(13, 236, 236);
-    border-left: 3px solid rgb(13, 236, 236);
-
-    h2 {
-        border-bottom: 1px solid rgb(13, 236, 236);
-    }
+    border-left: 4px solid rgb(13, 236, 236);
+    border-top: 2px solid rgb(13, 236, 236);
 }
 
 .health {
-    border-top: 3px solid yellow;
-    border-left: 3px solid yellow;
-
-    h2 {
-        border-bottom: 1px solid yellow;
-    }
+    border-left: 4px solid yellow;
+    border-top: 2px solid yellow;
 }
 
 .work {
-    border-top: 3px solid rgb(95, 255, 47);
-    border-left: 3px solid rgb(95, 255, 47);
-
-    h2 {
-        border-bottom: 1px solid rgb(95, 255, 47);
-    }
+    border-left: 4px solid rgb(95, 255, 47);
+    border-top: 2px solid rgb(95, 255, 47);
 }
 
 .art {
-    border-top: 3px solid rgb(255, 130, 151);
-    border-left: 3px solid rgb(255, 130, 151);
-
-    h2 {
-        border-bottom: 1px solid rgb(255, 130, 151);
-    }
+    border-left: 4px solid rgb(255, 130, 151);
+    border-top: 2px solid rgb(255, 130, 151);
 }

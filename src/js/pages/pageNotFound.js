@@ -19,7 +19,7 @@ const pageNotFound = function() {
 
     const message = errorMsg('404', 'Seems like you\'re looking for something that isn\'t here...')
     
-    const linkElm = link('go back!!', '/')
+    const linkElm = link('go back to safety!', '/')
     linkContainer.append(linkElm)
 
     notFoundContent.append(brand)
