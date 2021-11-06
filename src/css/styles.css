@@ -414,7 +414,7 @@ table th {
   line-height: 1;
   padding: 1.5rem 0;
   background-color: #fafafa;
-  border-bottom: 2px solid #d3d3d3;
+  border-bottom: 3px solid #d4d4d4;
 }
 .ui-page-header h1 {
   font-family: "Brush Script MT", cursive;
@@ -487,7 +487,7 @@ table th {
   height: 3rem;
   border: 3px solid #ededed;
   border-radius: 8px;
-  background: #fca311;
+  background: #14213d;
 }
 
 .add-btn:hover {
@@ -503,10 +503,8 @@ table th {
 .ui-list li {
   margin: 1rem 0;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-  background-color: #fafafa;
+  background-color: #fff;
   border-radius: 8px;
-  border-bottom: 2px solid #d3d3d3;
-  border-right: 2px solid #d3d3d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,7 +570,7 @@ table th {
   border: none;
   width: 2.45rem;
   height: 2.45rem;
-  background: #fafafa;
+  background: #fff;
 }
 
 .editBtn:hover {
@@ -586,11 +584,34 @@ table th {
   border: none;
   width: 2.45rem;
   height: 2.45rem;
-  background: #fafafa;
+  background: #fff;
 }
 
 .deleteBtn:hover {
   cursor: pointer;
+}
+
+.crud-list {
+  margin: 2rem 1rem 2rem;
+  border-radius: 8px;
+  color: #16213d;
+}
+.crud-list li {
+  margin: 1rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.crud-list li p {
+  font-size: 0.85rem;
+}
+.crud-list h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.crud-controls {
+  text-align: center;
 }
 
 body {

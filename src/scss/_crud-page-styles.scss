@@ -1,0 +1,25 @@
+.crud-list {
+    margin: 2rem 1rem 2rem;
+    border-radius: 8px;
+    color: rgb(22, 33, 61);
+
+    li {
+        margin: 1rem 0;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    li p {
+        font-size: .85rem;
+    }
+    
+    h2 {
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+}
+
+.crud-controls {
+    text-align: center;
+}
