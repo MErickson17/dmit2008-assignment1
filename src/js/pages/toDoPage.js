@@ -41,6 +41,7 @@ const toDoPage = function() {
         if (todoData !== null) {
             const elements = todoData.map(item => todoTemplate(item))
             elements.forEach(element => {
+                
                 element.querySelector('#delete').addEventListener('click', onDeleteTodo)
                 listContainer.append(element)
             })
