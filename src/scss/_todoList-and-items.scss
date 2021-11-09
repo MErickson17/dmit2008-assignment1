@@ -3,6 +3,15 @@
     border-radius: 8px;
     color: rgb(22, 33, 61);
 
+    h2 {
+        font-size: 1.10rem;
+        font-weight: 700;
+        svg {
+            width: 1.5rem;
+            height: auto;
+        }
+    }
+
     li {
         margin: 1rem 0;
         padding: 0.5rem 0.5rem 0.5rem 1.5rem;
@@ -14,12 +23,14 @@
 
     li p {
         font-size: .85rem;
+        margin-top: .5rem;
     }
     
-    h2 {
-        font-size: 1.05rem;
-        font-weight: 700;
+    li span {
+        color: grey;
+        font-weight: 500;
     }
+    
 }
 
 .button-container {
@@ -35,25 +46,35 @@
 
 .school {
     border-left: 4px solid red;
-    border-top: 2px solid red;
+    h2 svg {
+        fill: red;
+    }
 }
 
 .recreation {
     border-left: 4px solid rgb(13, 236, 236);
-    border-top: 2px solid rgb(13, 236, 236);
+    h2 svg {
+        fill: rgb(13, 236, 236);
+    }
 }
 
 .health {
-    border-left: 4px solid yellow;
-    border-top: 2px solid yellow;
+    border-left: 4px solid purple;
+    h2 svg {
+        fill: purple;
+    }
 }
 
 .work {
     border-left: 4px solid rgb(95, 255, 47);
-    border-top: 2px solid rgb(95, 255, 47);
+    h2 svg {
+        fill: rgb(95, 255, 47);
+    }
 }
 
 .art {
     border-left: 4px solid rgb(255, 130, 151);
-    border-top: 2px solid rgb(255, 130, 151);
+    h2 svg {
+        fill: rgb(255, 130, 151);
+    }
 }

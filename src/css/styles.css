@@ -500,6 +500,10 @@ table th {
   border-radius: 8px;
   color: #16213d;
 }
+.ui-list h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 .ui-list li {
   margin: 1rem 0;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
@@ -514,10 +518,11 @@ table th {
 }
 .ui-list li p {
   font-size: 0.85rem;
+  margin-top: 0.5rem;
 }
-.ui-list h2 {
-  font-size: 1.05rem;
-  font-weight: 700;
+.ui-list li span {
+  color: grey;
+  font-weight: 500;
 }
 
 .button-container {
@@ -612,6 +617,23 @@ table th {
 
 .crud-controls {
   text-align: center;
+}
+
+.ui-button {
+  margin: 0 1rem;
+  padding: 0.2rem 1rem;
+  color: #0a0a0a;
+  font-weight: 700;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #14213D;
+}
+
+.ui-button:hover {
+  background-color: #14213D;
+  color: #e5e5e5;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 body {

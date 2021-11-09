@@ -1,6 +1,7 @@
 import deleteButton from "./../ui/buttons/deleteButton";
 import editButton from "./../ui/buttons/editButton";
 import makeElement from "./../../utils/makeElement";
+import moonIcon from "./../icons/moonIcon";
 //Data Model:
 /*
     todoItem = {
@@ -22,9 +23,9 @@ const todoTemplate = function({id, category, title, isComplete, startDate, start
     `
     <li data-key="${id}" class="${category}">
         <div>
-            <h2>${title}</h2>
-            <p>Start Date: ${startDate} @ ${startTime}</p>
-            <p>End Date: ${endDate} @ ${endTime}</p>
+            <h2>${moonIcon()} ${title}</h2>
+            <p><span>Start Date:</span><br/>${startDate} @ ${startTime}</p>
+            <p><span>End Date:</span><br/>${endDate} @ ${endTime}</p>
             ${completeStatus}
         </div>
         <div class="button-container" data-key="${id}">
