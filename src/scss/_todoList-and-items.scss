@@ -23,12 +23,17 @@
 
     li p {
         font-size: .85rem;
+        font-weight: 500;
         margin-top: .5rem;
     }
     
     li span {
         color: grey;
-        font-weight: 500;
+    }
+
+    .completed {
+        color: green;
+        font-weight: 700;
     }
     
 }
@@ -36,12 +41,7 @@
 .button-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.completed {
-    color: green;
-    font-weight: 700;
+    justify-content: space-around;
 }
 
 .school {

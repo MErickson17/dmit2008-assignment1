@@ -504,6 +504,10 @@ table th {
   font-size: 1.1rem;
   font-weight: 700;
 }
+.ui-list h2 svg {
+  width: 1.5rem;
+  height: auto;
+}
 .ui-list li {
   margin: 1rem 0;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
@@ -518,11 +522,15 @@ table th {
 }
 .ui-list li p {
   font-size: 0.85rem;
+  font-weight: 500;
   margin-top: 0.5rem;
 }
 .ui-list li span {
   color: grey;
-  font-weight: 500;
+}
+.ui-list .completed {
+  color: green;
+  font-weight: 700;
 }
 
 .button-container {
@@ -533,39 +541,43 @@ table th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.completed {
-  color: green;
-  font-weight: 700;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .school {
   border-left: 4px solid red;
-  border-top: 2px solid red;
+}
+.school h2 svg {
+  fill: red;
 }
 
 .recreation {
   border-left: 4px solid #0decec;
-  border-top: 2px solid #0decec;
+}
+.recreation h2 svg {
+  fill: #0decec;
 }
 
 .health {
-  border-left: 4px solid yellow;
-  border-top: 2px solid yellow;
+  border-left: 4px solid purple;
+}
+.health h2 svg {
+  fill: purple;
 }
 
 .work {
   border-left: 4px solid #5fff2f;
-  border-top: 2px solid #5fff2f;
+}
+.work h2 svg {
+  fill: #5fff2f;
 }
 
 .art {
   border-left: 4px solid #ff8297;
-  border-top: 2px solid #ff8297;
+}
+.art h2 svg {
+  fill: #ff8297;
 }
 
 .editBtn {
@@ -601,6 +613,14 @@ table th {
   border-radius: 8px;
   color: #16213d;
 }
+.crud-list h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.crud-list h2 svg {
+  width: 1.5rem;
+  height: auto;
+}
 .crud-list li {
   margin: 1rem 0;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
@@ -609,10 +629,11 @@ table th {
 }
 .crud-list li p {
   font-size: 0.85rem;
+  margin-top: 0.5rem;
 }
-.crud-list h2 {
-  font-size: 1.05rem;
-  font-weight: 700;
+.crud-list li span {
+  color: grey;
+  font-weight: 500;
 }
 
 .crud-controls {
