@@ -21,7 +21,8 @@ const toDoPage = function() {
         const todos = toDoContent.querySelectorAll('li')
         todos.forEach((todo)=>{
             todo.removeEventListener('click', onDeleteTodo)
-            //add in the same for the edit and add button
+            todo.removeEventListener('click', onEditTodo)
+            //add in the same for the add button
         })
     }
 
@@ -33,6 +34,14 @@ const toDoPage = function() {
         cleanUp()
         Router('/delete', todoItem[0])
     }
+
+    // EVENT HANDLER FOR EDIT
+    function onEditTodo (e) {
+        const todoId = e.currentTarget.parentElement.parentElement.dataset.key
+        const todoItem = getStore().filter((todo) => todo.id === todoId)
+        cleanUp()
+        Router('/edit', todoItem[0])
+    }
     
     //fetch the data and place it into a store
     //do a foreach loop to render the list item for each todo entry
@@ -43,6 +52,7 @@ const toDoPage = function() {
             elements.forEach(element => {
                 
                 element.querySelector('#delete').addEventListener('click', onDeleteTodo)
+                element.querySelector('#edit').addEventListener('click', onEditTodo)
                 listContainer.append(element)
             })
         }

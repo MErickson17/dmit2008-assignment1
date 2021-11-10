@@ -2,11 +2,13 @@ import home from "./../pages/home";
 import pageNotFound from "./../pages/pageNotFound";
 import toDoPage from "./../pages/toDoPage";
 import deletePage from "./../pages/delete";
+import editPage from "./../pages/edit";
 
 const routes = {
     "/":home,
     "/todo":toDoPage,
-    "/delete":deletePage
+    "/delete":deletePage,
+    "/edit":editPage
 }
 
 const Router = function(pathname, params=null) {
