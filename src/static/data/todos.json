@@ -22,7 +22,7 @@
     {
         "id": "ha34njk7",
         "category": "health",
-        "title":"Physio Therapy Appt",
+        "title":"Physio Appointment",
         "isComplete":false,
         "startDate":"Thursday October 14th",
         "startTime":"10:00am",
@@ -32,7 +32,7 @@
     {
         "id": "kg47ds7h",
         "category": "work",
-        "title":"Work Shifts for the Week",
+        "title":"Complete Meeting Agenda",
         "isComplete":true,
         "startDate":"Monday September 13th",
         "startTime":"8:00am",
