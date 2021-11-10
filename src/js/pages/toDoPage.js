@@ -3,9 +3,8 @@ import todoList from "./../components/ui/todoList";
 import todoTemplate from "./../components/templates/todoItem";
 import appBar from "./../components/ui/appBar";
 import { getStore } from "./../redux/store";
-import todoItem from "./../components/templates/todoItem";
 import Router from "./../routes/router";
-import { get } from "lodash";
+import categoryLegend from "../components/templates/categoryLegend";
 
 
 //the todo list page
@@ -14,6 +13,7 @@ const toDoPage = function() {
 
     const toDoContent = document.createElement('div') //container for the page
     const brand = branding()
+    const legend = categoryLegend()
     const listContainer = todoList('ui-list');
 
     //Cleaning up event handlers when changing pages
@@ -57,6 +57,7 @@ const toDoPage = function() {
             })
         }
         toDoContent.append(brand)
+        toDoContent.append(legend)
         toDoContent.append(listContainer)
         toDoContent.append(appBar())
     }

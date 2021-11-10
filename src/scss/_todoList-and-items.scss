@@ -1,5 +1,58 @@
+.legend {
+    max-width: 275px;
+    margin: 1rem auto 0;
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid rgb(22, 33, 61);
+    svg {
+        width: 1.5rem;
+        height: auto;
+    }
+
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: grey;;
+    }
+
+    h3, p {
+        padding: .25rem 0;
+    }
+
+    h3 {
+        color:rgb(22, 33, 61);
+        font-weight: 500;
+        padding-right: .25rem;
+        text-decoration: underline rgb(22, 33, 61);
+    }
+
+    .health-legend svg {
+        fill: purple;
+    }
+
+    .school-legend svg {
+        fill: red;
+    }
+
+    .work-legend svg {
+        fill: rgb(95, 255, 47);
+    }
+
+    .rec-legend svg {
+        fill: rgb(13, 236, 236);
+    }
+
+    .art-legend svg {
+        fill: rgb(255, 130, 151);
+    }
+}
+
 .ui-list {
-    margin: 2rem 1rem 4rem;
+    margin: 1rem 1rem 4rem;
     border-radius: 8px;
     color: rgb(22, 33, 61);
 
