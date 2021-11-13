@@ -1,12 +1,12 @@
 import makeElement from "./../../utils/makeElement"
-import button from "./../ui/buttons/button"
+import Router from "./../../routes/router"
 
 
 const formTemplate = function(pageTitle=null, todoData={}) {
     const template = `
         <div class="crud-form">
         <h1>${pageTitle}</h1>
-        <form class="form-flex" data-key="${todoData.id}">
+        <form id="crudform" class="form-flex" data-key="${todoData.id}">
             <div>
                 <label for="todoId">ID</label>
                 <input type="text" id="todoId" required disabled value="${todoData.id}">                
@@ -15,7 +15,7 @@ const formTemplate = function(pageTitle=null, todoData={}) {
                 <div>
                     <label for="category">Category</label>
                     <select  id="category" required>
-                        <option selected disabled hidden value="">Select a Category</option>
+                        <option selected disabled value="">Select a Category</option>
                         <option value="school">School</option>
                         <option value="recreation">Recreation</option>
                         <option value="health">Health</option> 

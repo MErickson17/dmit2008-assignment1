@@ -39,14 +39,13 @@ function selectIcon(category){
 }
 
 //pass the todo object into this method and extract only the properties we want.
-const todoTemplate = function({id, category, title, isComplete, startDate, startTime, endDate, endTime}) {
+const todoTemplate = function({id, category, title, isComplete, endDate, endTime}) {
     const completeStatus = isComplete ? "<p class='completed'>Completed</p>" : "<p>&zwnj;</p>"; //zero-width non-joiner to force <p> to render and keep the same height as "Completed"
     const template = 
     `
     <li data-key="${id}" class="${category}">
         <div>
             <h2>${selectIcon(category)} ${title}</h2>
-            <p><span>Start Date:</span><br/>${startDate} @ ${startTime}</p>
             <p><span>End Date:</span><br/>${endDate} @ ${endTime}</p>
             ${completeStatus}
         </div>

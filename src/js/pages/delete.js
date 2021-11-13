@@ -35,7 +35,6 @@ const deletePage = function(props){
 
     function onDeleteTodo (e) {
         if(props !== null){
-            Router('/todo')
             const removeTodo = props
             const index = getStore().findIndex(todo => todo.id === removeTodo.id)
             const action = {
