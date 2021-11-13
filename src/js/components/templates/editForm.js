@@ -1,5 +1,4 @@
-import makeElement from "./../../utils/makeElement"
-import Router from "./../../routes/router"
+import makeElement from "../../utils/makeElement"
 
 
 const formTemplate = function(pageTitle=null, todoData={}) {

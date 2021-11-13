@@ -1,5 +1,5 @@
 import branding from "./../components/ui/branding";
-import formTemplate from "./../components/templates/crudForm";
+import formTemplate from "./../components/templates/editForm";
 import button from "./../components/ui/buttons/button";
 import Router from "./../routes/router";
 import reducer from "./../redux/reducers";
@@ -48,7 +48,7 @@ const editPage = function(props){
             id: form.querySelector('#todoId').value,
             category: form.querySelector('#category').value,
             title: form.querySelector('#title').value,
-            isComplete: form.querySelector('#completeStatus').value,
+            isComplete: form.querySelector('#completeStatus').checked,
             startDate: form.querySelector('#startDate').value,
             startTime: form.querySelector('#startTime').value,
             endDate: form.querySelector('#endDate').value,

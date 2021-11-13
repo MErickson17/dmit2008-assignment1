@@ -11,4 +11,10 @@ const keyGenerator = function (data){
     return keyedData
 }
 
+const generateSingleKey = function() {
+    key = uuidv4().substr(0,8);
+    return key
+}
+
 export default keyGenerator
+export { generateSingleKey }

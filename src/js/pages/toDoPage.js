@@ -22,7 +22,7 @@ const toDoPage = function() {
         todos.forEach((todo)=>{
             todo.removeEventListener('click', onDeleteTodo)
             todo.removeEventListener('click', onEditTodo)
-            //add in the same for the add button
+            toDoContent.querySelector('#add').removeEventListener('click', onAddTodo)
         })
     }
 
@@ -42,6 +42,12 @@ const toDoPage = function() {
         cleanUp()
         Router('/edit', todoItem[0])
     }
+
+    // EVENT HANDLER FOR ADD
+    function onAddTodo (e) {
+        cleanUp()
+        Router('/add')
+    }
     
     //fetch the data and place it into a store
     //do a foreach loop to render the list item for each todo entry
@@ -60,11 +66,11 @@ const toDoPage = function() {
         toDoContent.append(legend)
         toDoContent.append(listContainer)
         toDoContent.append(appBar())
+        toDoContent.querySelector('#add').addEventListener('click', onAddTodo)
     }
 
     render()
     return toDoContent
-
 }
 
 export default toDoPage
