@@ -1,5 +1,5 @@
 import branding from "./../components/ui/branding";
-import addFormTemplate from "../components/templates/addForm";
+import { addFormTemplate } from "./../components/templates/crudForm";
 import button from "./../components/ui/buttons/button";
 import Router from "./../routes/router";
 import reducer from "./../redux/reducers";

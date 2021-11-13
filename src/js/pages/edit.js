@@ -1,5 +1,5 @@
 import branding from "./../components/ui/branding";
-import formTemplate from "./../components/templates/editForm";
+import formTemplate from "./../components/templates/crudForm";
 import button from "./../components/ui/buttons/button";
 import Router from "./../routes/router";
 import reducer from "./../redux/reducers";
@@ -44,7 +44,7 @@ const editPage = function(props){
         e.preventDefault()
 
         //gather updated data
-        const updated = {
+        const updated = Object.assign({}, todoData, {
             id: form.querySelector('#todoId').value,
             category: form.querySelector('#category').value,
             title: form.querySelector('#title').value,
@@ -53,7 +53,7 @@ const editPage = function(props){
             startTime: form.querySelector('#startTime').value,
             endDate: form.querySelector('#endDate').value,
             endTime: form.querySelector('#endTime').value
-        }
+        })
 
 
         const action = {
