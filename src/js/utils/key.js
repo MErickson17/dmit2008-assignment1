@@ -12,7 +12,7 @@ const keyGenerator = function (data){
 }
 
 const generateSingleKey = function() {
-    key = uuidv4().substr(0,8);
+    let key = uuidv4().substr(0,8);
     return key
 }
 
