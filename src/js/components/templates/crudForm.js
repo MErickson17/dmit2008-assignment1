@@ -4,9 +4,10 @@ import makeElement from "../../utils/makeElement"
 const formTemplate = function(pageTitle=null, todoData={}) {
     const template = `
         <div class="crud-form">
-        <h1>${pageTitle}</h1>
+        <h2>${pageTitle}</h2>
+        <div class="error"></div>
         <form id="crudform" class="form-flex" data-key="${todoData.id}">
-            <div>
+            <div class="full-width">
                 <label for="todoId">ID</label>
                 <input type="text" id="todoId" required disabled value="${todoData.id}">                
             </div>
@@ -22,12 +23,12 @@ const formTemplate = function(pageTitle=null, todoData={}) {
                         <option value="art">Art</option> 
                     </select>
                 </div>
-                <div>
+                <div class="checkbox">
                     <label for="completeStatus">Completed</label>
                     <input type="checkbox" id="completeStatus" value="${todoData.isComplete}">  
                 </div>
             </div>
-            <div>
+            <div class="full-width">
                 <label for="title">Todo Title</label>
                 <input type="text" id="title" value="${todoData.title}" required>
             </div>
@@ -52,7 +53,6 @@ const formTemplate = function(pageTitle=null, todoData={}) {
                 </div>
             </div>
         </form>
-        <div class="error"></div>
     </div>
     `
 
@@ -64,9 +64,10 @@ const formTemplate = function(pageTitle=null, todoData={}) {
 const addFormTemplate = function(pageTitle=null) {
     const template = `
         <div class="crud-form">
-        <h1>${pageTitle}</h1>
+        <h2>${pageTitle}</h2>
+        <div class="error"></div>
         <form id="crudform" class="form-flex">
-            <div>
+            <div class="full-width">
                 <label for="todoId">ID</label>
                 <input type="text" id="todoId" required disabled>                
             </div>
@@ -82,12 +83,12 @@ const addFormTemplate = function(pageTitle=null) {
                         <option value="art">Art</option> 
                     </select>
                 </div>
-                <div>
+                <div class="checkbox">
                     <label for="completeStatus">Completed</label>
                     <input type="checkbox" id="completeStatus">  
                 </div>
             </div>
-            <div>
+            <div class="full-width">
                 <label for="title">Todo Title</label>
                 <input type="text" id="title"required>
             </div>
@@ -112,7 +113,6 @@ const addFormTemplate = function(pageTitle=null) {
                 </div>
             </div>
         </form>
-        <div class="error"></div>
     </div>
     `
 

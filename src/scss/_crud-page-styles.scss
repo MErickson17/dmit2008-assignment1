@@ -38,4 +38,82 @@
 
 .crud-controls {
     text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+.error {
+    font-size: .85rem;
+    color: red;
+    text-align: center;
+    font-weight: 700;
+}
+
+.crud-form {
+    width: 90%;
+    max-width: 500px;
+    margin: 1rem auto 0;
+    h2 {
+        text-align: center;
+        color: rgb(22, 33, 61);
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .form-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .full-width {
+        width: 100%;
+    }
+    .full-width:first-child {
+        label {
+            width: 100%;
+        }
+        input {
+            width: 5.5rem;
+        }
+    }
+    .side-by-side {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .side-by-side > div {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .side-by-side > div:last-child {
+        width: 25%;
+    }
+    label {
+        margin-bottom: 0rem;
+        font-weight: 500;
+        color:rgb(22, 33, 61);
+    }
+    input, select {
+        width: 100%;
+        height: 1.55rem;
+        margin-bottom: 1rem;
+        padding-left: .3rem;
+        border-radius: 5px;
+        border: 1px solid rgb(22, 33, 61);
+    }
+    input[type=text], select {
+        color: grey;
+        font-weight: 500;
+    }
+    *:focus {
+        outline: none;
+    }
+    input:focus, select:focus{
+        border-bottom: 2px solid orange;
+    }
+    .checkbox label {
+        width: 100%;
+        text-align: center;
+    }
 }

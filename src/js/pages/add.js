@@ -36,11 +36,13 @@ const addPage = function(props){
             // for now, doing only one feedback message...
             if(category === '' || title.trim() === '' || startDate.trim() === '' || startTime.trim() === '' || endDate.trim() === '' || endTime.trim() === ''){
                 if (!error.hasChildNodes()) {
-                    error.appendChild(document.createTextNode('Please ensure all text fields are filled out and you have made a category selection before submitting.'));    
+                    error.appendChild(document.createTextNode('Please ensure all text fields are filled out and you have made a category selection.'));    
                 } 
             }
             else {
-                error.removeChild(error.firstChild) //if I later decide to do individual error messages, can do error.textContent = ''
+                if(error.hasChildNodes()){
+                    error.removeChild(error.firstChild) //if I later decide to do individual error messages, can do error.textContent = ''
+                }
             }
         }
 
