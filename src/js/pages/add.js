@@ -18,14 +18,37 @@ const addPage = function(props){
     const buttonContainer = document.createElement('div')
     buttonContainer.classList.add('crud-controls')    
     const addContent = document.createElement('div')
-    form = addFormTemplate("Add Todo Item")
+    const form = addFormTemplate("Add Todo Item")
     form.querySelector('#todoId').value = generateSingleKey()
+    let error = form.querySelector('div.error')
+
+
+        // validate form is filled out
+        function validateFormFilled() {
+            // gather form data we need to check. ID is not editable by end user and isComplete is a bool
+            let category = form.querySelector('#category').value
+            let title = form.querySelector('#title').value
+            let startDate = form.querySelector('#startDate').value
+            let startTime = form.querySelector('#startTime').value
+            let endDate = form.querySelector('#endDate').value
+            let endTime = form.querySelector('#endTime').value
+    
+            // for now, doing only one feedback message...
+            if(category === '' || title.trim() === '' || startDate.trim() === '' || startTime.trim() === '' || endDate.trim() === '' || endTime.trim() === ''){
+                if (!error.hasChildNodes()) {
+                    error.appendChild(document.createTextNode('Please ensure all text fields are filled out and you have made a category selection before submitting.'));    
+                } 
+            }
+            else {
+                error.removeChild(error.firstChild) //if I later decide to do individual error messages, can do error.textContent = ''
+            }
+        }
 
     // Cleaning up event handlers when changing pages
     function cleanUp() {
         cancelButton.removeEventListener('click', onCancelAdd)
         addButton.removeEventListener('click', onAddTodo)
-    }    
+    }
 
     // Cancel add action handler
     function onCancelAdd (e) {
@@ -37,26 +60,31 @@ const addPage = function(props){
     function onAddTodo (e) {
         e.preventDefault()
 
-        // gather updated data
-        const newTodo = {
-            id: form.querySelector('#todoId').value,
-            category: form.querySelector('#category').value,
-            title: form.querySelector('#title').value,
-            isComplete: form.querySelector('#completeStatus').checked,
-            startDate: form.querySelector('#startDate').value,
-            startTime: form.querySelector('#startTime').value,
-            endDate: form.querySelector('#endDate').value,
-            endTime: form.querySelector('#endTime').value
-        }
+        validateFormFilled()
 
 
-        const action = {
-            type:"add",
-            payload: newTodo,
-            cb:()=> Router('/todo')
+        if(!error.hasChildNodes()){
+            // gather updated data
+            const newTodo = {
+                id: form.querySelector('#todoId').value,
+                category: form.querySelector('#category').value,
+                title: form.querySelector('#title').value,
+                isComplete: form.querySelector('#completeStatus').checked,
+                startDate: form.querySelector('#startDate').value,
+                startTime: form.querySelector('#startTime').value,
+                endDate: form.querySelector('#endDate').value,
+                endTime: form.querySelector('#endTime').value
+            }
+
+
+            const action = {
+                type:"add",
+                payload: newTodo,
+                cb:()=> Router('/todo')
+            }
+            reducer(action)
+            cleanUp()
         }
-        reducer(action)
-        cleanUp()
     }
 
     // add event listeners

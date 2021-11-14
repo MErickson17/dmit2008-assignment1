@@ -52,6 +52,7 @@ const formTemplate = function(pageTitle=null, todoData={}) {
                 </div>
             </div>
         </form>
+        <div class="error"></div>
     </div>
     `
 
@@ -111,6 +112,7 @@ const addFormTemplate = function(pageTitle=null) {
                 </div>
             </div>
         </form>
+        <div class="error"></div>
     </div>
     `
 
