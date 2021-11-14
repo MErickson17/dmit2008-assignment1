@@ -5,6 +5,7 @@ const formTemplate = function(pageTitle=null, todoData={}) {
     const template = `
         <div class="crud-form">
         <h2>${pageTitle}</h2>
+        <p>* Indicates required field</p>
         <div class="error"></div>
         <form id="crudform" class="form-flex" data-key="${todoData.id}">
             <div class="full-width">
@@ -13,7 +14,7 @@ const formTemplate = function(pageTitle=null, todoData={}) {
             </div>
             <div class="side-by-side">
                 <div>
-                    <label for="category">Category</label>
+                    <label for="category">*Category</label>
                     <select  id="category" required>
                         <option selected disabled value="">Select a Category</option>
                         <option value="school">School</option>
@@ -29,26 +30,26 @@ const formTemplate = function(pageTitle=null, todoData={}) {
                 </div>
             </div>
             <div class="full-width">
-                <label for="title">Todo Title</label>
+                <label for="title">*Todo Title</label>
                 <input type="text" id="title" value="${todoData.title}" required>
             </div>
             <div class="side-by-side">
                 <div>
-                    <label for="startDate">Start Date</label>
+                    <label for="startDate">*Start Date</label>
                     <input type="text" id="startDate" value="${todoData.startDate}" required>
                 </div>
                 <div>
-                    <label for="startTime">Start Time</label>
+                    <label for="startTime">*Start Time</label>
                     <input type="text" id="startTime" value="${todoData.startTime}" required>
                 </div>
             </div>
             <div class="side-by-side">
                 <div>
-                    <label for="endDate">End Date</label>
+                    <label for="endDate">*End Date</label>
                     <input type="text" id="endDate" value="${todoData.endDate}" required>
                 </div>
                 <div>
-                    <label for="endTime">End Time</label>
+                    <label for="endTime">*End Time</label>
                     <input type="text" id="endTime" value="${todoData.endTime}" required>
                 </div>
             </div>
@@ -65,6 +66,7 @@ const addFormTemplate = function(pageTitle=null) {
     const template = `
         <div class="crud-form">
         <h2>${pageTitle}</h2>
+        <p>* Indicates required field</p>
         <div class="error"></div>
         <form id="crudform" class="form-flex">
             <div class="full-width">
@@ -73,7 +75,7 @@ const addFormTemplate = function(pageTitle=null) {
             </div>
             <div class="side-by-side">
                 <div>
-                    <label for="category">Category</label>
+                    <label for="category">*Category</label>
                     <select  id="category" required>
                         <option selected disabled value="">Select a Category</option>
                         <option value="school">School</option>
@@ -89,26 +91,26 @@ const addFormTemplate = function(pageTitle=null) {
                 </div>
             </div>
             <div class="full-width">
-                <label for="title">Todo Title</label>
+                <label for="title">*Todo Title</label>
                 <input type="text" id="title"required>
             </div>
             <div class="side-by-side">
                 <div>
-                    <label for="startDate">Start Date</label>
+                    <label for="startDate">*Start Date</label>
                     <input type="text" id="startDate" required>
                 </div>
                 <div>
-                    <label for="startTime">Start Time</label>
+                    <label for="startTime">*Start Time</label>
                     <input type="text" id="startTime" required>
                 </div>
             </div>
             <div class="side-by-side">
                 <div>
-                    <label for="endDate">End Date</label>
+                    <label for="endDate">*End Date</label>
                     <input type="text" id="endDate" required>
                 </div>
                 <div>
-                    <label for="endTime">End Time</label>
+                    <label for="endTime">*End Time</label>
                     <input type="text" id="endTime" required>
                 </div>
             </div>

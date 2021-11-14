@@ -36,7 +36,7 @@ const addPage = function(props){
             // for now, doing only one feedback message...
             if(category === '' || title.trim() === '' || startDate.trim() === '' || startTime.trim() === '' || endDate.trim() === '' || endTime.trim() === ''){
                 if (!error.hasChildNodes()) {
-                    error.appendChild(document.createTextNode('Please ensure all text fields are filled out and you have made a category selection.'));    
+                    error.appendChild(document.createTextNode('Please fill out all required fields.'));    
                 } 
             }
             else {
