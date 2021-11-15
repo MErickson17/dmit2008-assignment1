@@ -92,7 +92,7 @@ const addFormTemplate = function(pageTitle=null) {
             </div>
             <div class="full-width">
                 <label for="title">*Todo Title</label>
-                <input type="text" id="title"required>
+                <input type="text" id="title" required>
             </div>
             <div class="side-by-side">
                 <div>
