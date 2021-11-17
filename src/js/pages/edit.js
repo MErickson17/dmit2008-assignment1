@@ -46,7 +46,7 @@ const editPage = function(props){
         }
         else {
             if(error.hasChildNodes()){
-                error.removeChild(error.firstChild) //if I later decide to do individual error messages, can do error.textContent = ''
+                error.removeChild(error.firstChild)
             }
         }
     }
